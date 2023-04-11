@@ -24,7 +24,18 @@ body:
       description: Please make sure to read [the FaQ](https://github.com/Minesraft2/Blooket-Cheats/wiki#faq) before submitting any suggestions
       multiple: true
       options:
-        - I have not read the FaQ
-        - I have read the FaQ and my suggestion has not already been asked for or isn't possible
+        - I have not read the FaQ and my suggestion may be impossible
+        - I have read the FaQ and doesn't specify if my suggestion is possible
+    validations:
+      required: true
+   - type: dropdown
+    id: confirm
+    attributes:
+      label: Previous Suggestions
+      description: Please make sure to look at previous issues to check if your suggestion has already been looked at before submitting any suggestions
+      multiple: true
+      options:
+        - I have not looked at previous issues and someone may have asked for my suggestion
+        - I have looked at previous issues and my suggestion has not already been asked for
     validations:
       required: true
